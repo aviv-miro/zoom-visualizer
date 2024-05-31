@@ -19,24 +19,31 @@ export function updateGauge(deltaY: number) {
 
   timeoutId = setTimeout(() => {
     targetHeight = 50;
-  }, 10) as unknown as number; // Reduce debounce time for snappier responsiveness
+  }, 15) as unknown as number; // Reduce debounce time for snappier responsiveness
 }
 
 function drawGauge(ctx: CanvasRenderingContext2D) {
   const gaugeX = ctx.canvas.width / 2;
+  const middleY = ctx.canvas.height / 2;
+  // Draw the middle resting line
+  ctx.strokeStyle = "#ffff00";
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(gaugeX - 30, middleY);
+  ctx.lineTo(gaugeX + 30, middleY);
+  ctx.stroke();
 
   // Smoothly transition to the target height
-  currentHeight += (targetHeight - currentHeight) * 0.7; // Increase speed of transition
-  //
-  // ctx.clearRect(
-  //   0,
-  //   ctx.canvas.height / 2,
-  //   ctx.canvas.width,
-  //   ctx.canvas.height / 2,
-  // ); // Clear the gauge area
+  currentHeight += (targetHeight - currentHeight) * 0.9; // Increase speed of transition
 
-  ctx.fillStyle = "#00ff00";
   const gaugeHeight = (Math.abs(currentHeight - 50) * ctx.canvas.height) / 100;
+
+  if (currentHeight < 50) {
+    ctx.fillStyle = "#00ff00";
+  } else {
+    ctx.fillStyle = "#ff0000";
+  }
+
   const startY =
     currentHeight < 50
       ? ctx.canvas.height / 2 - gaugeHeight

@@ -18,7 +18,7 @@ function updateFPS(ctx: CanvasRenderingContext2D) {
   }
 
   // ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height / 2); // Clear the FPS area
-  ctx.font = "16px Arial";
+  ctx.font = "20px Arial";
   ctx.fillStyle = "white";
   ctx.fillText(`FPS: ${fps}`, 10, 30);
 
