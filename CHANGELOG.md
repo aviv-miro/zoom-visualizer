@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.9 (2024-05-31)
+
+
+### Features
+
+* update visuals ([9416295](https://github.com/aviv-miro/lib-test/commit/9416295dbb35d803e0551e859f6b9ba37b0f6a46))
+
 ### 0.1.8 (2024-05-31)
 
 
