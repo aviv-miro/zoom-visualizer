@@ -34,7 +34,7 @@ window.addEventListener(
   "wheel",
   (event: WheelEvent) => {
     event.preventDefault();
-    console.log("wheel event", event.deltaY);
+    // console.log("wheel event", event.deltaY);
     updateGauge(event.deltaY);
   },
   { passive: false },

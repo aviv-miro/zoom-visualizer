@@ -19,7 +19,7 @@ export function updateGauge(deltaY: number) {
 
   timeoutId = setTimeout(() => {
     targetHeight = 50;
-  }, 25) as unknown as number; // Reduce debounce time for snappier responsiveness
+  }, 20) as unknown as number; // Reduce debounce time for snappier responsiveness
 }
 
 function drawGauge(ctx: CanvasRenderingContext2D) {
