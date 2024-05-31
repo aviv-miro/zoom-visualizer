@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.6 (2024-05-31)
+
+
+### Features
+
+* adds gauge ([b3a8145](https://github.com/aviv-miro/lib-test/commit/b3a81450509ef2c13adf619f4d46c6e381387062))
+
 ### 0.1.5 (2024-05-31)
 
 ### 0.1.4 (2024-05-07)
