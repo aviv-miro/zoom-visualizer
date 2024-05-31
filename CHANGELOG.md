@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.8 (2024-05-31)
+
+
+### Bug Fixes
+
+* fine tune the gauge ([9b3cb65](https://github.com/aviv-miro/lib-test/commit/9b3cb6501c0948ff48cbb07079488249cbbe3737))
+
 ### 0.1.7 (2024-05-31)
 
 
